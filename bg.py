@@ -22,7 +22,7 @@ def parse_cfg():
 
     with open(cfg) as f:
         for line in f:
-            k, v = line.strip().split('\t')
+            k, v = line.strip().split("\t")
             li.append((k, v))
 
     return li
@@ -47,6 +47,15 @@ li = [
     ("cdc", "conda create -y -n "),
     # for pip
     ("pipi", "pip install "),
+    ("pipr", "pip install -r requirements.txt"),
+    # for git
+    ("gp", "git push "),
+    ("gba", "git branch -av"),
+    ("gc", "git checkout "),
+    ("gcb", "git checkout -b "),
+    ("gs", "git status"),
+    ("gm", "git commit -m"),
+    ("ga", "git add "),
 ]
 
 li.extend(parse_cfg())
