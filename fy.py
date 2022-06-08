@@ -1,3 +1,10 @@
+"""
+File  :    fy.py
+Author:    ershan
+mail  :    ershan_coding@outlook.com
+desc  :    A quick translation tool.
+"""
+
 import click
 import clipboard
 import translators as ts
