@@ -43,19 +43,27 @@ li = [
     # for conda
     ("cde", "conda deactivate"),
     ("cda", "conda activate "),
-    ("cdi", "conda install "),
+    ("cdi", "conda install -y "),
     ("cdc", "conda create -y -n "),
     # for pip
     ("pipi", "pip install "),
     ("pipr", "pip install -r requirements.txt"),
     # for git
-    ("gp", "git push "),
+    ("ga", "git add "),
     ("gba", "git branch -av"),
     ("gc", "git checkout "),
     ("gcb", "git checkout -b "),
+    ("gd", "git diff "),
+    ("gm", 'git commit -m""'),
+    ("gp", "git push "),
+    ("gpl", "git pull "),
     ("gs", "git status"),
-    ("gm", "git commit -m"),
-    ("ga", "git add "),
+    ("gst", "git stash"),
+    # for code insiders
+    ("cii", "code-insiders --install-extension "),
+    ("ci", "code-insiders "),
+    # for code 
+    ("codei", "code --install-extension "),
 ]
 
 li.extend(parse_cfg())
